@@ -107,20 +107,11 @@ FOREIGN KEY (fk_caixa) REFERENCES tb_Caixas(id_caixa),
 FOREIGN KEY (fk_fornecedor) REFERENCES tb_Fornecedores(id_fornecedor)
 );
 
-
--- Inserindo dados na tabela tb_Funcionario
-INSERT INTO tb_Funcionarios (nome, cpf) VALUES
-('Carlos Lima', '123.321.456-00'),
-('Fernanda Gomes', '456.654.789-00'),
-('Rafael Torres', '789.987.123-00');
-
--- Inserindo dados na tabela tb_Cliente
 INSERT INTO tb_Clientes (nome, cpf, email, telefone, data_nacimento) VALUES
 ('João Silva', '123.456.789-00', 'joao.silva@example.com', '(11) 1234-5678', '1985-04-12'),
 ('Maria Oliveira', '987.654.321-00', 'maria.oliveira@example.com', '(21) 8765-4321', '1990-07-15'),
 ('Pedro Santos', '456.789.123-00', 'pedro.santos@example.com', '(31) 1357-2468', '1975-11-22');
 
--- Inserindo dados na tabela tb_Vendas (3 com cliente e 2 sem cliente)
 INSERT INTO tb_Vendas (data_venda, valor_total, desconto, valor_final, tipo, fk_cliente) VALUES
 ('2024-08-01', 100, 10, 90, 'A', 1),
 ('2024-08-02', 200.00, 20.00, 180.00, 'B', 2),

@@ -7,24 +7,12 @@
       "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:views\\caixaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|c:\\users\\gud gud\\onedrive\\ads 3\u00BAp\\atv_caixa\\caixa\\views\\funcionarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:views\\funcionarioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|c:\\users\\gud gud\\onedrive\\ads 3\u00BAp\\atv_caixa\\caixa\\views\\despesaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:views\\despesaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|c:\\users\\gud gud\\onedrive\\ads 3\u00BAp\\atv_caixa\\caixa\\dao\\funcionariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:dao\\funcionariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|c:\\users\\gud gud\\onedrive\\ads 3\u00BAp\\atv_caixa\\caixa\\views\\caixaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:views\\caixaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|c:\\users\\gud gud\\onedrive\\ads 3\u00BAp\\atv_caixa\\caixa\\views\\recebimentoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:views\\recebimentoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|c:\\users\\gud gud\\onedrive\\ads 3\u00BAp\\atv_caixa\\caixa\\views\\despesaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{290AD75D-8167-41E4-869F-2AC9D50D820A}|Caixa.csproj|solutionrelative:views\\despesaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,19 +34,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CaixaView.cs",
-              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\CaixaView.cs",
-              "RelativeDocumentMoniker": "Views\\CaixaView.cs",
-              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\CaixaView.cs",
-              "RelativeToolTip": "Views\\CaixaView.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAQwGQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T23:29:30.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CaixaView.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\CaixaView.cs",
@@ -66,57 +41,32 @@
               "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\CaixaView.cs [Design]",
               "RelativeToolTip": "Views\\CaixaView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T23:29:29.149Z",
+              "WhenOpened": "2024-09-04T00:47:33.561Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FuncionarioView.cs",
-              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\FuncionarioView.cs",
-              "RelativeDocumentMoniker": "Views\\FuncionarioView.cs",
-              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\FuncionarioView.cs",
-              "RelativeToolTip": "Views\\FuncionarioView.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwH4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T23:25:32.788Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FuncionarioDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\DAO\\FuncionarioDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\FuncionarioDAO.cs",
-              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\DAO\\FuncionarioDAO.cs",
-              "RelativeToolTip": "DAO\\FuncionarioDAO.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAowGkAAAANAAAAAAAAAA==",
+              "Title": "DespesaView.cs",
+              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\DespesaView.cs",
+              "RelativeDocumentMoniker": "Views\\DespesaView.cs",
+              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\DespesaView.cs",
+              "RelativeToolTip": "Views\\DespesaView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T23:13:13.652Z",
+              "WhenOpened": "2024-09-04T00:45:38.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RecebimentoView.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\RecebimentoView.cs",
-              "RelativeDocumentMoniker": "Views\\RecebimentoView.cs",
-              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\RecebimentoView.cs [Design]",
-              "RelativeToolTip": "Views\\RecebimentoView.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "DespesaView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\DespesaView.cs",
+              "RelativeDocumentMoniker": "Views\\DespesaView.cs",
+              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Views\\DespesaView.cs [Design]",
+              "RelativeToolTip": "Views\\DespesaView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T21:16:51.616Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Home.cs",
-              "RelativeDocumentMoniker": "Home.cs",
-              "ToolTip": "C:\\Users\\Gud Gud\\OneDrive\\ADS 3\u00BAP\\ATV_Caixa\\Caixa\\Home.cs [Design]",
-              "RelativeToolTip": "Home.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T20:57:38.743Z",
+              "WhenOpened": "2024-09-04T00:45:31.132Z",
               "EditorCaption": " [Design]"
             }
           ]

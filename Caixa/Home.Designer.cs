@@ -37,7 +37,7 @@
             // btnCaixa
             // 
             this.btnCaixa.BackColor = System.Drawing.Color.Gold;
-            this.btnCaixa.Location = new System.Drawing.Point(319, 12);
+            this.btnCaixa.Location = new System.Drawing.Point(96, 94);
             this.btnCaixa.Name = "btnCaixa";
             this.btnCaixa.Size = new System.Drawing.Size(155, 73);
             this.btnCaixa.TabIndex = 0;
@@ -48,7 +48,7 @@
             // btnRecebimento
             // 
             this.btnRecebimento.BackColor = System.Drawing.Color.Lime;
-            this.btnRecebimento.Location = new System.Drawing.Point(468, 280);
+            this.btnRecebimento.Location = new System.Drawing.Point(497, 263);
             this.btnRecebimento.Name = "btnRecebimento";
             this.btnRecebimento.Size = new System.Drawing.Size(155, 82);
             this.btnRecebimento.TabIndex = 1;
@@ -59,7 +59,7 @@
             // btnDespesa
             // 
             this.btnDespesa.BackColor = System.Drawing.Color.Red;
-            this.btnDespesa.Location = new System.Drawing.Point(172, 278);
+            this.btnDespesa.Location = new System.Drawing.Point(497, 94);
             this.btnDespesa.Name = "btnDespesa";
             this.btnDespesa.Size = new System.Drawing.Size(155, 81);
             this.btnDespesa.TabIndex = 2;
@@ -70,7 +70,7 @@
             // btnFuncionario
             // 
             this.btnFuncionario.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnFuncionario.Location = new System.Drawing.Point(319, 150);
+            this.btnFuncionario.Location = new System.Drawing.Point(96, 263);
             this.btnFuncionario.Name = "btnFuncionario";
             this.btnFuncionario.Size = new System.Drawing.Size(155, 73);
             this.btnFuncionario.TabIndex = 3;
@@ -82,12 +82,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnFuncionario);
             this.Controls.Add(this.btnDespesa);
             this.Controls.Add(this.btnRecebimento);
             this.Controls.Add(this.btnCaixa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Home";
+            this.ShowIcon = false;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);

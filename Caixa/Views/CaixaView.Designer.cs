@@ -49,7 +49,7 @@
             // cbx_StatusCaixa
             // 
             this.cbx_StatusCaixa.FormattingEnabled = true;
-            this.cbx_StatusCaixa.Location = new System.Drawing.Point(626, 633);
+            this.cbx_StatusCaixa.Location = new System.Drawing.Point(307, 520);
             this.cbx_StatusCaixa.Name = "cbx_StatusCaixa";
             this.cbx_StatusCaixa.Size = new System.Drawing.Size(169, 28);
             this.cbx_StatusCaixa.TabIndex = 21;
@@ -57,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(646, 601);
+            this.label1.Location = new System.Drawing.Point(327, 488);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 20);
             this.label1.TabIndex = 20;
@@ -66,15 +66,15 @@
             // cbx_Funcionario
             // 
             this.cbx_Funcionario.FormattingEnabled = true;
-            this.cbx_Funcionario.Location = new System.Drawing.Point(847, 635);
+            this.cbx_Funcionario.Location = new System.Drawing.Point(307, 617);
             this.cbx_Funcionario.Name = "cbx_Funcionario";
-            this.cbx_Funcionario.Size = new System.Drawing.Size(193, 28);
+            this.cbx_Funcionario.Size = new System.Drawing.Size(230, 28);
             this.cbx_Funcionario.TabIndex = 19;
             // 
             // lb_Funcionario
             // 
             this.lb_Funcionario.AutoSize = true;
-            this.lb_Funcionario.Location = new System.Drawing.Point(852, 603);
+            this.lb_Funcionario.Location = new System.Drawing.Point(312, 585);
             this.lb_Funcionario.Name = "lb_Funcionario";
             this.lb_Funcionario.Size = new System.Drawing.Size(188, 20);
             this.lb_Funcionario.TabIndex = 18;
@@ -83,7 +83,7 @@
             // btn_InserirCaixa
             // 
             this.btn_InserirCaixa.BackColor = System.Drawing.Color.Lime;
-            this.btn_InserirCaixa.Location = new System.Drawing.Point(218, 691);
+            this.btn_InserirCaixa.Location = new System.Drawing.Point(885, 573);
             this.btn_InserirCaixa.Name = "btn_InserirCaixa";
             this.btn_InserirCaixa.Size = new System.Drawing.Size(155, 74);
             this.btn_InserirCaixa.TabIndex = 17;
@@ -93,15 +93,15 @@
             // 
             // txt_TotalSaidas
             // 
-            this.txt_TotalSaidas.Location = new System.Drawing.Point(417, 635);
+            this.txt_TotalSaidas.Location = new System.Drawing.Point(29, 691);
             this.txt_TotalSaidas.Name = "txt_TotalSaidas";
-            this.txt_TotalSaidas.Size = new System.Drawing.Size(151, 26);
+            this.txt_TotalSaidas.Size = new System.Drawing.Size(210, 26);
             this.txt_TotalSaidas.TabIndex = 16;
             // 
             // lb_TotalSaidas
             // 
             this.lb_TotalSaidas.AutoSize = true;
-            this.lb_TotalSaidas.Location = new System.Drawing.Point(440, 603);
+            this.lb_TotalSaidas.Location = new System.Drawing.Point(81, 659);
             this.lb_TotalSaidas.Name = "lb_TotalSaidas";
             this.lb_TotalSaidas.Size = new System.Drawing.Size(97, 20);
             this.lb_TotalSaidas.TabIndex = 15;
@@ -109,15 +109,15 @@
             // 
             // txt_TotalEntradas
             // 
-            this.txt_TotalEntradas.Location = new System.Drawing.Point(224, 635);
+            this.txt_TotalEntradas.Location = new System.Drawing.Point(29, 621);
             this.txt_TotalEntradas.Name = "txt_TotalEntradas";
-            this.txt_TotalEntradas.Size = new System.Drawing.Size(149, 26);
+            this.txt_TotalEntradas.Size = new System.Drawing.Size(210, 26);
             this.txt_TotalEntradas.TabIndex = 14;
             // 
             // lb_TotalEntradas
             // 
             this.lb_TotalEntradas.AutoSize = true;
-            this.lb_TotalEntradas.Location = new System.Drawing.Point(240, 603);
+            this.lb_TotalEntradas.Location = new System.Drawing.Point(70, 585);
             this.lb_TotalEntradas.Name = "lb_TotalEntradas";
             this.lb_TotalEntradas.Size = new System.Drawing.Size(113, 20);
             this.lb_TotalEntradas.TabIndex = 13;
@@ -125,15 +125,15 @@
             // 
             // txt_SaldoInicial
             // 
-            this.txt_SaldoInicial.Location = new System.Drawing.Point(29, 635);
+            this.txt_SaldoInicial.Location = new System.Drawing.Point(29, 520);
             this.txt_SaldoInicial.Name = "txt_SaldoInicial";
-            this.txt_SaldoInicial.Size = new System.Drawing.Size(152, 26);
+            this.txt_SaldoInicial.Size = new System.Drawing.Size(210, 26);
             this.txt_SaldoInicial.TabIndex = 12;
             // 
             // lb_SaldoInicial
             // 
             this.lb_SaldoInicial.AutoSize = true;
-            this.lb_SaldoInicial.Location = new System.Drawing.Point(60, 603);
+            this.lb_SaldoInicial.Location = new System.Drawing.Point(70, 488);
             this.lb_SaldoInicial.Name = "lb_SaldoInicial";
             this.lb_SaldoInicial.Size = new System.Drawing.Size(94, 20);
             this.lb_SaldoInicial.TabIndex = 11;
@@ -146,7 +146,7 @@
             this.dgv_Caixas.Name = "dgv_Caixas";
             this.dgv_Caixas.RowHeadersWidth = 62;
             this.dgv_Caixas.RowTemplate.Height = 28;
-            this.dgv_Caixas.Size = new System.Drawing.Size(1011, 437);
+            this.dgv_Caixas.Size = new System.Drawing.Size(1011, 365);
             this.dgv_Caixas.TabIndex = 26;
             // 
             // label2
@@ -161,9 +161,9 @@
             // btn_Deletar
             // 
             this.btn_Deletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_Deletar.Location = new System.Drawing.Point(929, 512);
+            this.btn_Deletar.Location = new System.Drawing.Point(885, 452);
             this.btn_Deletar.Name = "btn_Deletar";
-            this.btn_Deletar.Size = new System.Drawing.Size(87, 42);
+            this.btn_Deletar.Size = new System.Drawing.Size(155, 74);
             this.btn_Deletar.TabIndex = 27;
             this.btn_Deletar.Text = "Deletar";
             this.btn_Deletar.UseVisualStyleBackColor = false;
@@ -172,7 +172,7 @@
             // btn_AtualizarCaixa
             // 
             this.btn_AtualizarCaixa.BackColor = System.Drawing.Color.Aqua;
-            this.btn_AtualizarCaixa.Location = new System.Drawing.Point(626, 691);
+            this.btn_AtualizarCaixa.Location = new System.Drawing.Point(885, 691);
             this.btn_AtualizarCaixa.Name = "btn_AtualizarCaixa";
             this.btn_AtualizarCaixa.Size = new System.Drawing.Size(155, 74);
             this.btn_AtualizarCaixa.TabIndex = 28;
@@ -200,7 +200,9 @@
             this.Controls.Add(this.lb_TotalEntradas);
             this.Controls.Add(this.txt_SaldoInicial);
             this.Controls.Add(this.lb_SaldoInicial);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CaixaView";
+            this.ShowIcon = false;
             this.Text = "Caixa";
             this.Load += new System.EventHandler(this.Caixa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Caixas)).EndInit();

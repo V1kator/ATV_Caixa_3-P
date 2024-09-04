@@ -42,48 +42,51 @@
             // 
             // btn_Adicionar
             // 
-            this.btn_Adicionar.Location = new System.Drawing.Point(40, 527);
+            this.btn_Adicionar.BackColor = System.Drawing.Color.Lime;
+            this.btn_Adicionar.Location = new System.Drawing.Point(583, 555);
             this.btn_Adicionar.Name = "btn_Adicionar";
-            this.btn_Adicionar.Size = new System.Drawing.Size(89, 39);
+            this.btn_Adicionar.Size = new System.Drawing.Size(167, 90);
             this.btn_Adicionar.TabIndex = 39;
             this.btn_Adicionar.Text = "Adicionar";
-            this.btn_Adicionar.UseVisualStyleBackColor = true;
+            this.btn_Adicionar.UseVisualStyleBackColor = false;
             this.btn_Adicionar.Click += new System.EventHandler(this.btn_Adicionar_Click);
             // 
             // btn_Atualizar
             // 
-            this.btn_Atualizar.Location = new System.Drawing.Point(169, 527);
+            this.btn_Atualizar.BackColor = System.Drawing.Color.Aqua;
+            this.btn_Atualizar.Location = new System.Drawing.Point(880, 555);
             this.btn_Atualizar.Name = "btn_Atualizar";
-            this.btn_Atualizar.Size = new System.Drawing.Size(85, 40);
+            this.btn_Atualizar.Size = new System.Drawing.Size(167, 90);
             this.btn_Atualizar.TabIndex = 38;
             this.btn_Atualizar.Text = "Atualizar";
-            this.btn_Atualizar.UseVisualStyleBackColor = true;
+            this.btn_Atualizar.UseVisualStyleBackColor = false;
             this.btn_Atualizar.Click += new System.EventHandler(this.btn_Atualizar_Click);
             // 
             // btn_Deletar
             // 
-            this.btn_Deletar.Location = new System.Drawing.Point(960, 586);
+            this.btn_Deletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_Deletar.Location = new System.Drawing.Point(880, 416);
             this.btn_Deletar.Name = "btn_Deletar";
-            this.btn_Deletar.Size = new System.Drawing.Size(87, 42);
+            this.btn_Deletar.Size = new System.Drawing.Size(167, 90);
             this.btn_Deletar.TabIndex = 37;
             this.btn_Deletar.Text = "Deletar";
-            this.btn_Deletar.UseVisualStyleBackColor = true;
+            this.btn_Deletar.UseVisualStyleBackColor = false;
             this.btn_Deletar.Click += new System.EventHandler(this.btn_Deletar_Click);
             // 
             // dgv_Funcionarios
             // 
             this.dgv_Funcionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Funcionarios.Location = new System.Drawing.Point(304, 129);
+            this.dgv_Funcionarios.Location = new System.Drawing.Point(31, 56);
             this.dgv_Funcionarios.Name = "dgv_Funcionarios";
             this.dgv_Funcionarios.RowHeadersWidth = 62;
             this.dgv_Funcionarios.RowTemplate.Height = 28;
-            this.dgv_Funcionarios.Size = new System.Drawing.Size(743, 437);
+            this.dgv_Funcionarios.Size = new System.Drawing.Size(1016, 349);
             this.dgv_Funcionarios.TabIndex = 36;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(614, 75);
+            this.label2.Location = new System.Drawing.Point(482, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 35;
@@ -92,7 +95,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 75);
+            this.label1.Location = new System.Drawing.Point(148, 448);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 43;
@@ -100,15 +103,15 @@
             // 
             // txt_Nome
             // 
-            this.txt_Nome.Location = new System.Drawing.Point(29, 110);
+            this.txt_Nome.Location = new System.Drawing.Point(49, 480);
             this.txt_Nome.Name = "txt_Nome";
-            this.txt_Nome.Size = new System.Drawing.Size(244, 26);
+            this.txt_Nome.Size = new System.Drawing.Size(261, 26);
             this.txt_Nome.TabIndex = 42;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(109, 190);
+            this.label3.Location = new System.Drawing.Point(566, 457);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 20);
             this.label3.TabIndex = 45;
@@ -116,9 +119,9 @@
             // 
             // txt_cpf
             // 
-            this.txt_cpf.Location = new System.Drawing.Point(29, 213);
+            this.txt_cpf.Location = new System.Drawing.Point(463, 480);
             this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(244, 26);
+            this.txt_cpf.Size = new System.Drawing.Size(261, 26);
             this.txt_cpf.TabIndex = 44;
             // 
             // FuncionarioView
@@ -135,8 +138,10 @@
             this.Controls.Add(this.btn_Deletar);
             this.Controls.Add(this.dgv_Funcionarios);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FuncionarioView";
-            this.Text = "FuncionarioView";
+            this.ShowIcon = false;
+            this.Text = "Funcionario";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Funcionarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
