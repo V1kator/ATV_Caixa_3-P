@@ -70,6 +70,10 @@ namespace Caixa.Views
 
         private void btn_InserirCaixa_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
             try
             {
                 Caixas cx = new Caixas();
@@ -189,6 +193,10 @@ namespace Caixa.Views
 
         private void btn_AtualizarCaixa_Click_1(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
             try
             {
                 
@@ -235,6 +243,51 @@ namespace Caixa.Views
                 Conexao.FecharConexao();
             }
         }
-        
+
+        private bool ValidarCampos()
+        {
+            
+            if (string.IsNullOrWhiteSpace(txt_SaldoInicial.Text) || !double.TryParse(txt_SaldoInicial.Text, out _))
+            {
+                MessageBox.Show("Por favor, insira um valor válido para o saldo inicial.");
+                txt_SaldoInicial.Focus();
+                return false;
+            }
+
+            
+            if (string.IsNullOrWhiteSpace(txt_TotalEntradas.Text) || !double.TryParse(txt_TotalEntradas.Text, out _))
+            {
+                MessageBox.Show("Por favor, insira um valor válido para o total de entradas.");
+                txt_TotalEntradas.Focus();
+                return false;
+            }
+
+            
+            if (string.IsNullOrWhiteSpace(txt_TotalSaidas.Text) || !double.TryParse(txt_TotalSaidas.Text, out _))
+            {
+                MessageBox.Show("Por favor, insira um valor válido para o total de saídas.");
+                txt_TotalSaidas.Focus();
+                return false;
+            }
+
+            
+            if (cbx_StatusCaixa.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione o status do caixa.");
+                cbx_StatusCaixa.Focus();
+                return false;
+            }
+
+            
+            if (cbx_Funcionario.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um funcionário responsável pelo caixa.");
+                cbx_Funcionario.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
     }
 }

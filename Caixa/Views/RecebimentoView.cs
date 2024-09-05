@@ -26,15 +26,21 @@ namespace Caixa.Views
 
             cbx_StatusRecebimento.Items.Add("PENDENTE");
             cbx_StatusRecebimento.Items.Add("PAGO");
-
+            
             ConfigurarDataGridView();
             ListaRecebimentos();
         }
 
         private void btn_Atualizar_Click(object sender, EventArgs e)
         {
-            try
+            
+            if (!ValidarCampos())
             {
+                
+                return;
+            }
+            try
+            {                
                 if (dgv_Recebimentos.SelectedRows.Count > 0)
                 {
                     foreach (DataGridViewRow row in dgv_Recebimentos.SelectedRows)
@@ -75,19 +81,35 @@ namespace Caixa.Views
 
         private void btn_Adicionar_Click(object sender, EventArgs e)
         {
-            Recebimentos recebimento = new Recebimentos();
+            if (!ValidarCampos())
+            {
 
-            recebimento.valor = Convert.ToDouble(txt_Valor.Text);
-            recebimento.data_vencimento = Convert.ToDateTime(dtp_Vencimento.Value);
-            recebimento.data_pagamento = Convert.ToDateTime(dtp_Pagamento.Text);
-            recebimento.status_recebimento = (string)cbx_StatusRecebimento.SelectedItem;
-            Vendas vendaSelecionada = (Vendas)cbx_Venda.SelectedItem;
-            recebimento.fk_venda = vendaSelecionada;
-            Caixas caixaSelecionado = (Caixas)cbx_Caixa.SelectedItem;
-            recebimento.fk_caixa = caixaSelecionado;
-            RecebimentoDAO recebimentoDAO = new RecebimentoDAO();
-            recebimentoDAO.Insert(recebimento);
-            ListaRecebimentos();
+                return;
+            }
+
+            try
+            {
+                ValidarCampos();
+                Recebimentos recebimento = new Recebimentos();
+
+                recebimento.valor = Convert.ToDouble(txt_Valor.Text);
+                recebimento.data_vencimento = Convert.ToDateTime(dtp_Vencimento.Value);
+                recebimento.data_pagamento = Convert.ToDateTime(dtp_Pagamento.Text);
+                recebimento.status_recebimento = (string)cbx_StatusRecebimento.SelectedItem;
+                Vendas vendaSelecionada = (Vendas)cbx_Venda.SelectedItem;
+                recebimento.fk_venda = vendaSelecionada;
+                Caixas caixaSelecionado = (Caixas)cbx_Caixa.SelectedItem;
+                recebimento.fk_caixa = caixaSelecionado;
+                RecebimentoDAO recebimentoDAO = new RecebimentoDAO();
+                recebimentoDAO.Insert(recebimento);
+                ListaRecebimentos();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao adicionar Recebimentos: " + ex.Message);
+            }
+           
         }
 
         private void ConfigurarDataGridView()
@@ -246,5 +268,52 @@ namespace Caixa.Views
                 Conexao.FecharConexao();
             }
         }
+
+        private bool ValidarCampos()
+        {
+            // Verificar se TextBox de valor está preenchida
+            if (string.IsNullOrWhiteSpace(txt_Valor.Text))
+            {
+                MessageBox.Show("Por favor, insira um valor.");
+                txt_Valor.Focus();
+                return false;
+            }
+
+            // Verificar se a TextBox de data de vencimento está preenchida (caso seja manual)
+            if (string.IsNullOrWhiteSpace(dtp_Vencimento.Text))
+            {
+                MessageBox.Show("Por favor, insira a data de vencimento.");
+                dtp_Vencimento.Focus();
+                return false;
+            }
+
+            // Verificar se um item foi selecionado na ComboBox de status de recebimento
+            if (cbx_StatusRecebimento.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione o status do recebimento.");
+                cbx_StatusRecebimento.Focus();
+                return false;
+            }
+
+            // Verificar se uma venda foi selecionada na ComboBox de vendas
+            if (cbx_Venda.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione uma venda.");
+                cbx_Venda.Focus();
+                return false;
+            }
+
+            // Verificar se um caixa foi selecionado na ComboBox de caixas
+            if (cbx_Caixa.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um caixa.");
+                cbx_Caixa.Focus();
+                return false;
+            }
+
+            // Se todas as validações passaram, retornar true
+            return true;
+        }
+
     }
 }

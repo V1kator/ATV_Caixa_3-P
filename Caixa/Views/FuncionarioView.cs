@@ -23,6 +23,10 @@ namespace Caixa.Views
 
         private void btn_Adicionar_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
             try
             {
                 Funcionarios funcionario = new Funcionarios
@@ -47,6 +51,10 @@ namespace Caixa.Views
 
         private void btn_Atualizar_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
             try
             {
                 if (dgv_Funcionarios.SelectedRows.Count > 0)
@@ -159,6 +167,35 @@ namespace Caixa.Views
             {
                 Conexao.FecharConexao();
             }
+        }
+
+        private bool ValidarCampos()
+        {
+            
+            if (string.IsNullOrWhiteSpace(txt_Nome.Text))
+            {
+                MessageBox.Show("Por favor, insira o nome do funcionário.");
+                txt_Nome.Focus();
+                return false;
+            }
+
+            
+            if (string.IsNullOrWhiteSpace(txt_cpf.Text))
+            {
+                MessageBox.Show("Por favor, insira o CPF do funcionário.");
+                txt_cpf.Focus();
+                return false;
+            }
+
+            
+            if (txt_cpf.Text.Length != 11)
+            {
+                MessageBox.Show("O CPF deve ter 11 dígitos.");
+                txt_cpf.Focus();
+                return false;
+            }
+
+            return true;
         }
     }
 }

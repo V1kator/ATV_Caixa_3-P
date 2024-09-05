@@ -34,6 +34,11 @@ namespace Caixa.Views
 
         private void btn_Adicionar_Click(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
+            
             Despesas despesa = new Despesas();
 
             despesa.valor = Convert.ToDouble(txt_Valor.Text);
@@ -149,6 +154,10 @@ namespace Caixa.Views
 
         private void btn_Atualizar_Click_1(object sender, EventArgs e)
         {
+            if (!ValidarCampos())
+            {
+                return;
+            }
             try
             {
                 if (dgv_Despesas.SelectedRows.Count > 0)
@@ -229,6 +238,60 @@ namespace Caixa.Views
                 Conexao.FecharConexao();
             }
         }
+
+        private bool ValidarCampos()
+        {
+            
+            if (string.IsNullOrWhiteSpace(txt_Valor.Text) || !double.TryParse(txt_Valor.Text, out _))
+            {
+                MessageBox.Show("Por favor, insira um valor válido para a despesa.");
+                txt_Valor.Focus();
+                return false;
+            }
+
+            
+            if (dtp_Vencimento.Value == null)
+            {
+                MessageBox.Show("Por favor, insira a data de vencimento.");
+                dtp_Vencimento.Focus();
+                return false;
+            }
+
+            
+            if (dtp_Pagamento.Value == null)
+            {
+                MessageBox.Show("Por favor, insira a data de pagamento.");
+                dtp_Pagamento.Focus();
+                return false;
+            }
+
+            
+            if (cbx_StatusDespesas.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione o status da despesa.");
+                cbx_StatusDespesas.Focus();
+                return false;
+            }
+
+            
+            if (cbx_Fornecedores.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um fornecedor.");
+                cbx_Fornecedores.Focus();
+                return false;
+            }
+
+            
+            if (cbx_Caixas.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um caixa.");
+                cbx_Caixas.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
 
     }
 }
